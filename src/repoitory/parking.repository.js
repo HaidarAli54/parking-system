@@ -1,0 +1,1 @@
+const Parking = require('../models/parking')
