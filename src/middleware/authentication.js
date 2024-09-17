@@ -3,7 +3,7 @@ const secret = process.env.JWT_KEY;
 
 class TokenJwt {
 
-    verifyToken (req,res,next) {
+    verifyToken (req, res) {
 
         const authHeader = req.headers['authorization'];
         const token = authHeader && authHeader.split(' ')[1];
@@ -21,7 +21,6 @@ class TokenJwt {
                 })
             }
             req.id_user = decoded.id;
-            next();
         });
     }
 }

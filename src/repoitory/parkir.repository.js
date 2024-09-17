@@ -1,1 +1,0 @@
-const Parkir = require('../models/parkir')
